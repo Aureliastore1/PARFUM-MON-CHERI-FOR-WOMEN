@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARFUM MON CHERI FOR WOMEN - Royal Fragrance Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #ff69b4;
+            --secondary: #8b5a8c;
+            --accent: #ffd700;
+            --text-dark: #2d2d2d;
+            --text-light: #666;
+            --bg-light: #fef7ff;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fef7ff 0%, #ffe6f3 100%);
+            overflow-x: hidden;
+        }
+        
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255,105,180,0.1) 0%, rgba(139,90,140,0.1) 100%);
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(255,105,180,0.3);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse-glow {
+            from { box-shadow: 0 0 10px rgba(255,105,180,0.5); }
+            to { box-shadow: 0 0 30px rgba(255,105,180,0.8); }
+        }
+        
+        .slide-up {
+            animation: slideUp 0.5s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .modal {
+            backdrop-filter: blur(5px);
+        }
+        
+        .countdown-digit {
+            font-family: 'Poppins', monospace;
+            background: linear-gradient(135deg, #ff69b4, #8b5a8c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .verified-badge {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #2d2d2d;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .stock-bar {
+            height: 8px;
+            background: linear-gradient(90deg, #ff69b4 0%, #ff69b4 70%, #e0e0e0 70%);
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stock-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        .testimonial-card {
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,105,180,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255,105,180,0.2);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .price-strike {
+            position: relative;
+        }
+        
+        .price-strike::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #ff4757;
+            transform: rotate(-15deg);
+        }
+        
+        .urgency-badge {
+            background: linear-gradient(45deg, #ff4757, #ff3838);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-purple-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="https://mms.img.susercontent.com/ee76c48b220e1e9a430a380aaca3211c" 
+                         alt="Royal Fragrance Indonesia" 
+                         class="h-12 w-12 rounded-full glow-effect">
+                    <div>
+                        <h1 class="font-serif font-bold text-xl text-gray-800">ROYAL FRAGRANCE INDONESIA</h1>
+                        <div class="verified-badge">
+                            <i class="fas fa-check-circle"></i>
+                            Original Verified
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-12 md:py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-6">
+                    <div class="fade-in">
+                        <span class="urgency-badge inline-block mb-4">
+                            <i class="fas fa-fire mr-2"></i>
+                            HABIS STOK HARI INI!
+                        </span>
+                        <h1 class="font-serif text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+                            PARFUM MON CHERI<br>
+                            <span class="text-pink-500">FOR WOMEN</span>
+                        </h1>
+                        <p class="text-lg text-gray-600 mt-4">
+                            Wangi Premium Eropa yang Melambangkan Keanggunan & Kepercayaan Diri Wanita Indonesia
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4 fade-in">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="text-gray-700 font-semibold">4.9/5 (2.847 Ulasan)</span>
+                        </div>
+                        
+                        <div class="bg-white/50 backdrop-blur rounded-lg p-4">
+                            <div class="text-sm text-gray-600 mb-2">Stok Tersisa: <span id="current-stock" class="font-bold text-red-500">7</span> Botol</div>
+                            <div class="stock-bar w-full"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <button onclick="scrollToOrder()" class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 pulse-glow">
+                            <i class="fas fa-shopping-cart mr-2"></i>
+                            BELI SEKARANG JUGA
+                        </button>
+                        <p class="text-sm text-gray-600 mt-2">
+                            <i class="fas fa-truck mr-1"></i>
+                            KHUSUS PEMBAYARAN TF HARI INI DAPAT GRATIS ONGKIR
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134201-7rbk0-m7t7z6lqjtqo57.webp" 
+                         alt="Parfum Mon Cheri" 
+                         class="w-full max-w-md mx-auto floating rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="bg-gradient-to-r from-red-500 to-pink-500 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-white font-bold text-lg mb-2">PROMO BERAKHIR DALAM:</h3>
+            <div class="flex justify-center space-x-4">
+                <div class="bg-white/20 rounded-lg p-3 min-w-[80px]">
+                    <div id="hours" class="countdown-digit">00</div>
+                    <div class="text-white text-sm">JAM</div>
+                </div>
+                <div class="bg-white/20 rounded-lg p-3 min-w-[80px]">
+                    <div id="minutes" class="countdown-digit">00</div>
+                    <div class="text-white text-sm">MENIT</div>
+                </div>
+                <div class="bg-white/20 rounded-lg p-3 min-w-[80px]">
+                    <div id="seconds" class="countdown-digit">00</div>
+                    <div class="text-white text-sm">DETIK</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-serif text-3xl font-bold text-center mb-12">Masalah yang Sering Dialami Wanita</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-exclamation-triangle text-4xl text-red-500 mb-2"></i>
+                            <h3 class="font-bold text-xl">Masalah</h3>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-red-500 mt-1 mr-2"></i>
+                                <span>Parfum cepat hilang setelah 2-3 jam</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-red-500 mt-1 mr-2"></i>
+                                <span>Aroma tidak cocok dengan suasana tropis Indonesia</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-red-500 mt-1 mr-2"></i>
+                                <span>Mahal tetapi tidak tahan lama</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl p-6 text-white">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-check-circle text-4xl text-white mb-2"></i>
+                            <h3 class="font-bold text-xl">Solusi Mon Cheri</h3>
+                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-2"></i>
+                                <span>Long lasting hingga 8-12 jam</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-2"></i>
+                                <span>Dirancang khusus untuk iklim tropis Indonesia</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-2"></i>
+                                <span>Harga terjangkau dengan kualitas premium Eropa</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl font-bold text-center mb-12">Fitur Unggulan</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdx3-mbp5n7f7rtqu4b.webp" 
+                         alt="Fitur 1" 
+                         class="w-full max-w-sm mx-auto rounded-lg mb-4">
+                    <h3 class="font-bold text-xl mb-2">Aroma Premium</h3>
+                    <p class="text-gray-600">Campuran elegan bunga peony, mawar putih, dan vanilla</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxo-mbp5n7lvgpp8a1.webp" 
+                         alt="Fitur 2" 
+                         class="w-full max-w-sm mx-auto rounded-lg mb-4">
+                    <h3 class="font-bold text-xl mb-2">Tahan Lama</h3>
+                    <p class="text-gray-600">Formula khusus dengan 25% oil concentration untuk daya tahan maksimal</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-8 h-80 flex items-center justify-center">
+                        <div>
+                            <i class="fas fa-medal text-6xl text-purple-500 mb-4"></i>
+                            <h3 class="font-bold text-xl mb-2">Sertifikasi Halal</h3>
+                            <p class="text-gray-600">Dapat sertifikat halal MUI dan BPOM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl font-bold text-center mb-12">Galeri Produk</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://down-id.img.susercontent.com/file/id-11134201-7rbk8-m7t7z6so9m76d0.webp" 
+                     alt="Produk 1" 
+                     class="w-full h-48 object-cover rounded-lg cursor-pointer hover:scale-105 transition-transform"
+                     onclick="openModal(this.src)">
+                <img src="https://down-id.img.susercontent.com/file/id-11134201-7rbk4-m7t7z6rkball2e.webp" 
+                     alt="Produk 2" 
+                     class="w-full h-48 object-cover rounded-lg cursor-pointer hover:scale-105 transition-transform"
+                     onclick="openModal(this.src)">
+                <img src="https://down-id.img.susercontent.com/file/id-11134201-7rbk3-m7t7z5ku1s6168.webp" 
+                     alt="Produk 3" 
+                     class="w-full h-48 object-cover rounded-lg cursor-pointer hover:scale-105 transition-transform"
+                     onclick="openModal(this.src)">
+                <img src="https://down-id.img.susercontent.com/file/id-11134201-7rbkb-m7t7z5ly058wfb.webp" 
+                     alt="Produk 4" 
+                     class="w-full h-48 object-cover rounded-lg cursor-pointer hover:scale-105 transition-transform"
+                     onclick="openModal(this.src)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl font-bold text-center mb-12">Apa Kata Pelanggan Kami</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold">
+                            A
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Anisa Rahma - Ibu Rumah Tangga</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm">"Wangi nya soft banget, cocok untuk daily use. Suami bilang makin manis aja. Tahan lama juga sampai 8 jam kerja di rumah."</p>
+                </div>
+                
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                            M
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Maria - Guru SD</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm">"Sebagai guru, saya butuh parfum yang tahan lama tapi tidak terlalu strong. Mon Cheri ini pas banget! Murid-murid sering puji saya wangi."</p>
+                </div>
+                
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                            R
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Rina - Wiraswasta</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm">"Pertama beli karena penasaran, eh beneran ketagihan. Sekarang beli 3 botol sekaligus buat stok. Worth it banget!"</p>
+                </div>
+                
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
+                            S
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Sari - Karyawan Swasta</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm">"Sudah 3 bulan pakai ini dan banyak yang tanya pakai parfum apa. Teman kantor sampai minta link! Next mau coba varian lain."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-16 bg-gradient-to-r from-pink-500 to-purple-600">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="font-serif text-3xl font-bold mb-8">Harga Spesial Hari Ini</h2>
+            
+            <div class="bg-white/10 backdrop-blur rounded-xl p-8 max-w-md mx-auto">
+                <div class="mb-4">
+                    <span class="text-4xl font-bold line-through">Rp 252.600</span>
+                    <span class="text-sm ml-2">(Harga Normal)</span>
+                </div>
+                
+                <div class="mb-6">
+                    <span class="text-5xl font-bold">Rp 168.400</span>
+                    <span class="text-sm ml-2">/ Botol</span>
+                </div>
+                
+                <div class="bg-yellow-400 text-gray-800 rounded-lg p-3 mb-6">
+                    <i class="fas fa-fire mr-2"></i>
+                    HEMAT Rp 84.200
+                </div>
+                
+                <button onclick="scrollToOrder()" class="bg-white text-pink-600 px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-shopping-cart mr-2"></i>
+                    BELI SEKARANG
+                </button>
+                
+                <p class="text-sm mt-4">
+                    <i class="fas fa-clock mr-1"></i>
+                    Promo Berakhir Dalam <span id="countdown-text">-- : -- : --</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order-section" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl font-bold text-center mb-8">Pesan Sekarang</h2>
+            
+            <div class="max-w-lg mx-auto">
+                <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-exclamation-triangle text-red-500 mr-3"></i>
+                        <div>
+                            <p class="text-red-700 font-bold">PERINGATAN: Stok Tersisa 7 Botol Terakhir!</p>
+                            <p class="text-red-600 text-sm">Promo berlaku untuk 30 pelanggan pertama hari ini</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OrderOnline Embed -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="rosa" data-product-slug="parfum-mon-cheri-for-women" data-product-id="68a5b0789c24874917027b1b" id="oo-embed-form-parfum-mon-cheri-for-women-4431" data-origin="orderonline">
+                        <div class="ooef-loader">
+                            <div aria-live="polite" role="status"><div>Loading...</div></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Royal Fragrance Indonesia. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">
+                Customer Service: 085602240533 (CS Vita)
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
+        <div class="relative max-w-4xl">
+            <img id="modalImage" src="" alt="Produk" class="w-full h-auto rounded-lg">
+            <button onclick="closeModal()" class="absolute -top-10 right-0 text-white text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Fake Order Popup -->
+    <div id="fakeOrderPopup" class="fixed bottom-4 right-4 bg-white rounded-lg shadow-2xl p-4 max-w-sm z-40 hidden slide-up">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <div id="popupAvatar" class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    A
+                </div>
+                <div>
+                    <p class="text-sm font-semibold" id="popupName">Anonim</p>
+                    <p class="text-xs text-gray-600" id="popupLocation">Jakarta</p>
+                </div>
+            </div>
+            <button onclick="skipPopup()" class="text-gray-400">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <p class="text-sm mt-2">Baru saja membeli <span class="font-semibold">Mon Cheri Perfume</span></p>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function startCountdown() {
+            const endTime = new Date();
+            endTime.setHours(endTime.getHours() + 6); // 6 hours from now
+            
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+                
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('hours').innerHTML = String(hours).padStart(2, '0');
+                document.getElementById('minutes').innerHTML = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').innerHTML = String(seconds).padStart(2, '0');
+                
+                document.getElementById('countdown-text').innerHTML = 
+                    `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById('hours').innerHTML = '00';
+                    document.getElementById('minutes').innerHTML = '00';
+                    document.getElementById('seconds').innerHTML = '00';
+                    document.getElementById('countdown-text').innerHTML = 'PROMO TELAH BERAKHIR';
+                }
+            }
+            
+            updateCountdown();
+            const countdownInterval = setInterval(updateCountdown, 1000);
+        }
+        
+        // Dynamic Stock Counter
+        function updateStock() {
+            const currentStock = document.getElementById('current-stock');
+            let stock = parseInt(currentStock.innerText);
+            
+            setInterval(() => {
+                if (stock > 1) {
+                    stock--;
+                    currentStock.innerText = stock;
+                }
+            }, 20000); // Decrease every 20 seconds
+        }
+        
+        // Fake Order Popup
+        const names = ['Siti', 'Rina', 'Dewi', 'Linda', 'Fitri', 'Maya', 'Nur'];
+        const locations = ['Jakarta', 'Surabaya', 'Bandung', 'Medan', 'Semarang', 'Yogyakarta', 'Makassar'];
+        const colors = ['bg-pink-500', 'bg-purple-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500', 'bg-red-500'];
+        
+        function showFakeOrder() {
+            const popup = document.getElementById('fakeOrderPopup');
+            const nameIndex = Math.floor(Math.random() * names.length);
+            const locationIndex = Math.floor(Math.random() * locations.length);
+            const colorIndex = Math.floor(Math.random() * colors.length);
+            
+            document.getElementById('popupName').innerText = names[nameIndex];
+            document.getElementById('popupLocation').innerText = locations[locationIndex];
+            document.getElementById('popupAvatar').innerText = names[nameIndex][0];
+            document.getElementById('popupAvatar').className = `w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mr-3 ${colors[colorIndex]}`;
+            
+            popup.classList.remove('hidden');
+            
+            setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 5000);
+        }
+        
+        function skipPopup() {
+            document.getElementById('fakeOrderPopup').classList.add('hidden');
+        }
+        
+        // Modal Functions
+        function openModal(src) {
+            document.getElementById('modalImage').src = src;
+            document.getElementById('imageModal').classList.remove('hidden');
+        }
+        
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }
+        
+        // Smooth scroll to order
+        function scrollToOrder() {
+            document.getElementById('order-section').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // OrderOnline Embed Script
+        if (typeof xLogError != 'function') {
+            var xLogError = function (error) {
+                var req = new XMLHttpRequest();
+                var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                req.open('POST', 'https://api.orderonline.id/log', true);
+                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                req.send(params);
+            };
+        }
+        
+        try {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+                    if (!w._ooe) w._ooe = n;
+                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://rosa.orderonline.id');
+            ooe('init', '5f17ee268dcbdb1b55498d78', '68a5b0789c24874917027b1b', '68a5b0789c24874917027b1c', 'oo-embed-form-parfum-mon-cheri-for-women-4431', {
+                "mode":"page",
+                "action":"Klik untuk pemesanan",
+                "title":"Form Pemesanan",
+                "triggerPixel":true,
+                "triggerGtm":false
+            });
+            
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e);
+            throw e;
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            startCountdown();
+            updateStock();
+            
+            // Show fake order every 15-25 seconds
+            setInterval(() => {
+                const delay = Math.random() * 10000 + 5000; // 5-15 seconds
+                setTimeout(showFakeOrder, delay);
+            }, 20000);
+            
+            // Animate elements on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+        
+        // Close modal on outside click
+        document.getElementById('imageModal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
